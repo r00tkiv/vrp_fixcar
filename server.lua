@@ -22,7 +22,7 @@ AddEventHandler('chatMessage', function(source, name, msg)
 		local hasPerm = vRP.checkGroup(source)
 		if hasPerm then
 			CancelEvent()
-			TriggerClientEvent("wk:deleteVehicle", source)
+			TriggerClientEvent("murtaza:fix", source)
 		else 
 			CancelEvent()
 			vRPclient.notify(source,{"Comanda restrictionata!"})
